@@ -1,6 +1,6 @@
 <h1 align="center">morimo</h1>
 <div align="center">
-  <p>Performance-focused colorscheme designed for colorblind users</p>
+  <p>Performance-focused neovim colorscheme designed for colorblind users.</p>
 </div>
 
 > [!WARNING]
