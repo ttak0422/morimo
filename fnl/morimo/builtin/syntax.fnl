@@ -1,5 +1,5 @@
 (fn [ctx]
-  (let [{:color c} ctx]
+  (let [{:colors c} ctx]
     {;; ┌─────────────────────────┐
      ;; │ Syntax highlight groups │
      ;; └─────────────────────────┘

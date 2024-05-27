@@ -1,9 +1,9 @@
 -- [nfnl] Compiled from fnl/morimo/init.fnl by https://github.com/Olical/nfnl, do not edit.
-local color = require("morimo.color")
+local colors = require("morimo.colors")
 local default_config = {plugins = {}}
 local ctx
 local function _1_()
-  return {cfg = vim.g.morimo, color = color}
+  return {cfg = vim.g.morimo, colors = colors}
 end
 ctx = _1_
 local apply

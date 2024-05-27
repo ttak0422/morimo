@@ -1,8 +1,8 @@
-(let [color (require :morimo.color)
+(let [colors (require :morimo.colors)
       default_config {:plugins []} ;;
       ;; get context
       ctx (fn []
-            {:cfg vim.g.morimo : color}) ;;
+            {:cfg vim.g.morimo : colors}) ;;
       ;; apply highlights
       apply (fn [highlights]
               (each [hl spec (pairs highlights)]

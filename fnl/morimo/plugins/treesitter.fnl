@@ -1,6 +1,6 @@
 ;; see https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md#parser-configurations
 (fn [ctx]
-  (let [{:color c} ctx]
+  (let [{:colors c} ctx]
     {;; ┌─────────────┐
      ;; │ Identifiers │
      ;; └─────────────┘
