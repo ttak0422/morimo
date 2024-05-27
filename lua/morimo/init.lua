@@ -34,7 +34,7 @@ local function _3_()
     vim.cmd("hi clear")
   else
   end
-  vim.g.colors_name = "e"
+  vim.g.colors_name = "morimo"
   vim.o.termguicolors = true
   for _, f in ipairs({require("morimo.builtin.editor"), require("morimo.builtin.syntax"), unpack(plugins)}) do
     apply(f(ctx()))

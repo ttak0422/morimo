@@ -17,7 +17,7 @@
              ;; cleanup
              (when vim.g.colors_name
                (vim.cmd "hi clear"))
-             (set vim.g.colors_name :e)
+             (set vim.g.colors_name :morimo)
              (set vim.o.termguicolors true)
              ;; generate and apply highlights
              (each [_ f (ipairs [(require :morimo.builtin.editor)
