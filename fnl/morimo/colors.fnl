@@ -1,5 +1,6 @@
 {;; util
- :fg "#b5d2a9"
+ :fg0 "#b5d2a9"
+ :fg1 "#98b18e"
  :bg0 "#2a2a2e"
  :bg1 "#313135"
  :bg2 "#3f3f43"
@@ -32,7 +33,6 @@
  :purple "#a688a8"
  :violet "#8b85aa"
  ;; sub palette
- :fg_dim "#98b18e"
  :bg_visual "#474f54"
  :bg_red "#614b51"
  :bg_green "#474f54"

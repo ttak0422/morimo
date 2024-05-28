@@ -56,7 +56,7 @@
      ;; Line number for when the relativenumber option is set, below the cursor line.
      ; :LineNrBelow
      ;; Like LineNr when cursorline is set and cursorlineopt contains number or is both, for the cursor line.
-     :CursorLineNr {:fg c.fg :bold true}
+     :CursorLineNr {:fg c.fg0 :bold true}
      ;; Like FoldColumn when cursorline is set for the cursor line.
      ; :CursorLineFold
      ;; Like SignColumn when cursorline is set for the cursor line.
@@ -64,7 +64,7 @@
      ;; Character under the cursor or just before it, if it is a paired bracket, and its match.
      :MatchParen {:bg c.bg2 :bold true}
      ;; showmode message.
-     :ModeMsg {:fg c.fg :bold true}
+     :ModeMsg {:fg c.fg0 :bold true}
      ;; Area for messages and cmdline.
      :MsgArea {:link :StatusLine}
      ;; Separator for scrolled messages msgsep.
@@ -74,9 +74,9 @@
      ;; @ at the end of the window, characters from showbreak and other characters that do not really exist in the text.
      :NonText {:fg c.grey0}
      ;; Normal text.
-     :Normal {:fg c.fg :bg c.bg0}
+     :Normal {:fg c.fg0 :bg c.bg0}
      ;; Normal text in floating windows.
-     :NormalFloat {:fg c.fg :bg c.bg1}
+     :NormalFloat {:fg c.fg0 :bg c.bg1}
      ;; Border of floating windows.
      ; :FloatBorder {}
      ;; Title of floating windows.
@@ -86,7 +86,7 @@
      ;; Normal text in non-current windows.
      :NormalNC {:link :Normal}
      ;; Popup menu: Normal item.
-     :Pmenu {:fg c.fg :bg c.bg1}
+     :Pmenu {:fg c.fg0 :bg c.bg1}
      ;; Popup menu: Selected item>
      :PmenuSel {:fg c.bg0 :bg c.green}
      ;; Popup menu: Normal item kind.
@@ -108,7 +108,7 @@
      ;; Last search pattern highlighting.
      :Search {:fg c.bg0 :bg c.cyan}
      ;; Unprintable characters.
-     :SpecialKey {:fg c.fg_dim}
+     :SpecialKey {:fg c.fg1}
      ;; Word that is not recognized by the spellchecker.
      :SpellBad {:fg c.red :undercurl true :sp c.red}
      ;; Word that should start with a capital.
@@ -140,6 +140,6 @@
      ;; Current match in wildmenu completion.
      :WildMenu {:link :PmenuSel}
      ;; Window bar of current window.
-     :WinBar {:fg c.fg_dim :bg :NONE}
+     :WinBar {:fg c.fg1 :bg :NONE}
      ;; Window bar of not-current windows.
-     :WinBarNC {:fg c.fg_dim :bg :NONE}}))
+     :WinBarNC {:fg c.fg1 :bg :NONE}}))
