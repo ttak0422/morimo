@@ -35,7 +35,6 @@
  :purple "#a688a8"
  :violet "#8b85aa"
  ;; sub palette
- :bg_visual "#474f54"
  :bg_red "#614b51"
  :bg_green "#474f54"
  :bg_blue "#415c6d"
