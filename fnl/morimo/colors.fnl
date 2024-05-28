@@ -12,7 +12,7 @@
  ;; palette
  :lightRed "#ff6e6e"
  :red "#d76e6e"
- :darkRed "#934040"
+ :darkRed "#a25454"
  :lightGreen "#98c593"
  :green "#679f68"
  :darkGreen "#4a6e4a"
