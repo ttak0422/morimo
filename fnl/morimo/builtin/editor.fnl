@@ -72,7 +72,7 @@
      ;; more-prompt.
      :MoreMsg {:fg c.yellow :bold true}
      ;; @ at the end of the window, characters from showbreak and other characters that do not really exist in the text.
-     :NonText {:fg c.bg2}
+     :NonText {:fg c.grey0}
      ;; Normal text.
      :Normal {:fg c.fg :bg c.bg0}
      ;; Normal text in floating windows.
