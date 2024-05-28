@@ -4,9 +4,11 @@
  :bg0 "#2a2a2e"
  :bg1 "#313135"
  :bg2 "#3f3f43"
+ :bg3 "#48484c"
  :grey0 "#767b82"
  :grey1 "#7f868c"
  :grey2 "#9aa1a8"
+ :grey3 "#b0b7be"
  ;; palette
  :lightRed "#ff6e6e"
  :red "#d76e6e"

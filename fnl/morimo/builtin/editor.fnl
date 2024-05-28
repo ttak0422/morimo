@@ -18,7 +18,7 @@
      ;; Screen-column at the cursor, when cursorcolumn is set.
      :CursorColumn {:link :CursorLine}
      ;; CursorLine	Screen-line at the cursor, when cursorline is set.
-     :CursorLine {:bg c.bg1}
+     :CursorLine {:bg c.bg2}
      ;; Directory names.
      :Directory {:fg c.green}
      ;; Diff mode: Added line.
@@ -130,9 +130,9 @@
      ;; Titles for output from :set all, :autocmd etc.
      :Title {:fg c.orange :bold true}
      ;; Visual mode selection.
-     :Visual {:bg c.bg_visual}
+     :Visual {:bg c.bg3}
      ;; Visual mode selection when vim is Not Owning the Selection.
-     :VisualNOS {:bg c.bg_visual}
+     :VisualNOS {:bg c.bg3}
      ;; Warning messages.
      :WarningMsg {:fg c.yellow :bold true}
      ;; Whitespace	nbsp, space, tab, multispace, lead and trail.
