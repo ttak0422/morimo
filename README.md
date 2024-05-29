@@ -10,6 +10,12 @@
 
 [neovim (v0.9+)](https://github.com/neovim/neovim)
 
+## Features
+
+- **Colorblind-Friendly**: This color scheme is designed to be accessible for users with color blindness.
+- **Performance-Oriented**: Built with minimal configuration to ensure high performance and support for lazy loading settings.
+- **Borderless Compatibility**: Optimized for use with border=none settings, ensuring a clean and seamless appearance.
+
 ## Usage
 
 ```lua
