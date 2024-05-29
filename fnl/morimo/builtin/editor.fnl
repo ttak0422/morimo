@@ -120,7 +120,7 @@
      ;; Status line of current window.
      :StatusLine {:fg c.grey1 :bg c.bg1}
      ;; Status lines of not-current windows.
-     :StatusLineNC {:fg c.grey1 :bg c.bg0}
+     :StatusLineNC {:fg c.grey0 :bg c.bg1}
      ;; Tab pages line, not active tab page label.
      :TabLine {:fg c.grey2 :bg c.bg3}
      ;; Tab pages line, where there are no labels.
