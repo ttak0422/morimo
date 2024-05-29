@@ -5,7 +5,7 @@
      ;; │ Identifiers │
      ;; └─────────────┘
      ;; various variable names
-     "@variable" {:fg c.fg}
+     "@variable" {:fg c.fg0}
      ;; built-in variable names (e.g. `this`)
      "@variable.builtin" {:fg c.purple :italic true}
      ;; parameters of a function
@@ -139,7 +139,7 @@
      ; ;; comments documenting code
      ; "@comment.documentation" {}
      ;; error-type comments (e.g. `ERROR`, `FIXME`, `DEPRECATED`)
-     "@comment.error" {:fg c.fg :bg c.darkRed :bold true}
+     "@comment.error" {:fg c.fg0 :bg c.darkRed :bold true}
      ;; warning-type comments (e.g. `WARNING`, `FIX`, `HACK`)
      "@comment.warning" {:fg c.bg0 :bg c.yellow :bold true}
      ; ;; todo-type comments (e.g. `TODO`, `WIP`)

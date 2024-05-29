@@ -60,7 +60,7 @@
      ;; You can use CTRL-] on this.
      :Tag {:fg c.orange}
      ;; Character that needs attention.
-     :Delimiter {:fg c.fg}
+     :Delimiter {:fg c.fg0}
      ;; Special things inside a comment.
      :SpecialComment {:fg c.grey1 :italic true}
      ;; Debugging statements.

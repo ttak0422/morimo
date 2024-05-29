@@ -28,7 +28,7 @@
      ;; Diff mode: Deleted line.
      :DiffDelete {:bg c.sub_red0}
      ;; Diff mode: Changed text within a changed line.
-     :DiffText {:fg c.bg0 :bg c.fg}
+     :DiffText {:fg c.bg0 :bg c.fg0}
      ;; Filler lines (~) after the end of the buffer.
      :EndOfBuffer {:fg c.bg0}
      ;; Cursor in a focused terminal.
@@ -44,7 +44,7 @@
      ;; foldcolumn.
      :FoldColumn {:fg c.grey1}
      ;; Column where signs are displayed.
-     :SignColumn {:fg c.fg}
+     :SignColumn {:fg c.fg0}
      ;; incsearch highlighting.
      :IncSearch {:fg c.bg0 :bg c.lightGreen}
      ;; :substitute replacement text highlighting.
@@ -86,7 +86,7 @@
      ;; Normal text in non-current windows.
      :NormalNC {:link :Normal}
      ;; Popup menu: Normal item.
-     :Pmenu {:fg c.fg0 :bg c.bg1}
+     :Pmenu {:fg c.fg1 :bg c.bg1}
      ;; Popup menu: Selected item>
      :PmenuSel {:fg c.bg0 :bg c.green}
      ;; Popup menu: Normal item kind.
