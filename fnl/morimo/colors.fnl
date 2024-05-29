@@ -35,7 +35,19 @@
  :purple "#a688a8"
  :violet "#8b85aa"
  ;; sub palette
- :bg_red "#614b51"
- :bg_green "#474f54"
- :bg_blue "#415c6d"
- :bg_yellow "#5d5c50"}
+ :sub_red0 "#793a42"
+ :sub_red1 "#8c4a52"
+ :sub_red2 "#a15963"
+ :sub_red3 "#b56974"
+ :sub_green0 "#37574d"
+ :sub_green1 "#416960"
+ :sub_green2 "#4c7a72"
+ :sub_green3 "#578b85"
+ :sub_blue0 "#415c6d"
+ :sub_blue1 "#4c6a7f"
+ :sub_blue2 "#5b7a93"
+ :sub_blue3 "#6c8ba7"
+ :sub_yellow0 "#5d5c50"
+ :sub_yellow1 "#6c6a5c"
+ :sub_yellow2 "#7f7c6d"
+ :sub_yellow3 "#938e7f"}

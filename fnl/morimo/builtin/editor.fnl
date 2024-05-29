@@ -22,11 +22,11 @@
      ;; Directory names.
      :Directory {:fg c.green}
      ;; Diff mode: Added line.
-     :DiffAdd {:bg c.bg_green}
+     :DiffAdd {:bg c.sub_green0}
      ;; Diff mode: Changed line.
-     :DiffChange {:bg c.bg_blue}
+     :DiffChange {:bg c.sub_blue0}
      ;; Diff mode: Deleted line.
-     :DiffDelete {:bg c.bg_red}
+     :DiffDelete {:bg c.sub_red0}
      ;; Diff mode: Changed text within a changed line.
      :DiffText {:fg c.bg0 :bg c.fg}
      ;; Filler lines (~) after the end of the buffer.
