@@ -23,6 +23,7 @@
                                  (require :morimo.builtin.syntax)
                                  (unpack plugins)])]
                (apply (f ctx))))
+           ;; apply terminal highlights
            ((require :morimo.builtin.term) ctx))
    ;; load plugin highlights manually
    :load (fn [name]
