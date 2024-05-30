@@ -19,9 +19,6 @@
 ## Usage
 
 ```lua
--- morimo only supports termguicolors.
-vim.o.termguicolors = true
-
 -- config
 vim.g.morimo = {
 	-- Specify the integration plugins (/plugins/) to be loaded at startup.
