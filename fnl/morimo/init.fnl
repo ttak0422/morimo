@@ -1,8 +1,7 @@
 (let [colors (require :morimo.colors)
       default_config {:plugins []} ;;
-      ;; get context
-      ctx (fn []
-            {:cfg vim.g.morimo : colors}) ;;
+      ;;  context
+      ctx {:cfg vim.g.morimo : colors} ;;
       ;; apply highlights
       apply (fn [highlights]
               (each [hl spec (pairs highlights)]
@@ -23,7 +22,8 @@
              (each [_ f (ipairs [(require :morimo.builtin.editor)
                                  (require :morimo.builtin.syntax)
                                  (unpack plugins)])]
-               (apply (f (ctx))))))
+               (apply (f ctx))))
+           ((require :morimo.builtin.term) ctx))
    ;; load plugin highlights manually
    :load (fn [name]
-           (apply ((require (.. :morimo.plugins. name)) (ctx))))})
+           (apply ((require (.. :morimo.plugins. name)) ctx)))})
