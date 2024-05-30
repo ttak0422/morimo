@@ -6,6 +6,8 @@
 > [!WARNING]
 > This project is currently unstable and under active development.
 
+![image](https://github.com/ttak0422/morimo/assets/15827817/8ec442bb-47d2-4fc9-b505-477394b3ee7b)
+
 ## Requirements
 
 [neovim (v0.9+)](https://github.com/neovim/neovim)
