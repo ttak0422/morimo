@@ -16,7 +16,7 @@
 
 - **Colorblind-Friendly**: This color scheme is designed to be accessible for users with color blindness.
 - **Performance-Oriented**: Built with minimal configuration to ensure high performance and support for lazy loading settings.
-- **Borderless Compatibility**: Optimized for use with border=none settings, ensuring a clean and seamless appearance.
+- **Borderless Compatibility**: Optimized for use with `border=none` settings, ensuring a clean and seamless appearance.
 
 ## Usage
 
@@ -30,7 +30,7 @@ vim.g.morimo = {
 vim.cmd("colorscheme morimo")
 ```
 
-## Integration (WIP)
+## Integration 
 
 - [nvim-treesitter (treesitter)](https://github.com/nvim-treesitter/nvim-treesitter)
 - [gitsigns.nvim (gitsigns)](https://github.com/lewis6991/gitsigns.nvim)
