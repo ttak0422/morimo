@@ -249,6 +249,35 @@
               :Error {:fg c.red}
               ;; ** Anything that needs extra attention; mostly the keywords TODO FIXME WARNING and XXX. **
               :Todo {:fg c.purple :italic true}}
+      diagnnostics {;; Other Diagnostic highlights link to this by default (except Underline)
+                    :DiagnosticError {:fg c.darkRed}
+                    :DiagnosticWarn {:fg c.darkYellow}
+                    :DiagnosticInfo {:fg c.darkBlue}
+                    :DiagnosticHint {:fg c.darkCyan}
+                    :DiagnosticOk {:fg c.darkGreen}
+                    ; :DiagnosticVirtualTextError {}
+                    ; :DiagnosticVirtualTextWarn {}
+                    ; :DiagnosticVirtualTextInfo {}
+                    ; :DiagnosticVirtualTextHint {}
+                    ; :DiagnosticVirtualTextOk {}
+                    :DiagnosticUnderlineError {:fg c.darkRed :undercurl true}
+                    :DiagnosticUnderlineWarn {:fg c.darkYellow :undercurl true}
+                    :DiagnosticUnderlineInfo {:fg c.darkBlue :undercurl true}
+                    :DiagnosticUnderlineHint {:fg c.darkCyan :undercurl true}
+                    :DiagnosticUnderlineOk {:fg c.darkGreen :undercurl true}
+                    ; :DiagnosticFloatingError {}
+                    ; :DiagnosticFloatingWarn {}
+                    ; :DiagnosticFloatingInfo {}
+                    ; :DiagnosticFloatingHint {}
+                    ; :DiagnosticFloatingOk {}
+                    ; :DiagnosticSignError {}
+                    ; :DiagnosticSignWarn {}
+                    ; :DiagnosticSignInfo {}
+                    ; :DiagnosticSignHint {}
+                    ; :DiagnosticSignOk {}
+                    ; :DiagnosticDeprecated {}
+                    ; :DiagnosticUnnecessary {}
+                    }
       term [;; black
             c.bg0
             ;; red
@@ -301,7 +330,7 @@
              (set vim.g.colors_name :morimo)
              (set vim.o.termguicolors true)
              ;; apply builtin highlights
-             (each [_ hs (ipairs [editor lsp syntax])]
+             (each [_ hs (ipairs [editor lsp syntax diagnnostics])]
                (apply hs))
              ;; apply plugins highlights
              (each [_ f (ipairs plugins)]
