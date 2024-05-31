@@ -249,7 +249,7 @@
               :Error {:fg c.red}
               ;; ** Anything that needs extra attention; mostly the keywords TODO FIXME WARNING and XXX. **
               :Todo {:fg c.purple :italic true}}
-      diagnnostics {;; Other Diagnostic highlights link to this by default (except Underline)
+      diagnostics {;; Other Diagnostic highlights link to this by default (except Underline)
                     :DiagnosticError {:fg c.darkRed}
                     :DiagnosticWarn {:fg c.darkYellow}
                     :DiagnosticInfo {:fg c.darkBlue}
@@ -330,7 +330,7 @@
              (set vim.g.colors_name :morimo)
              (set vim.o.termguicolors true)
              ;; apply builtin highlights
-             (each [_ hs (ipairs [editor lsp syntax diagnnostics])]
+             (each [_ hs (ipairs [editor lsp syntax diagnostics])]
                (apply hs))
              ;; apply plugins highlights
              (each [_ f (ipairs plugins)]
