@@ -1,6 +1,8 @@
 <h1 align="center">morimo</h1>
 <div align="center">
   <p>Performance-focused neovim colorscheme designed for colorblind users.</p>
+  <img alt="tag" src="https://img.shields.io/github/v/tag/ttak0422/morimo?style=for-the-badge&label=latest%20tag&color=orange">
+  <img alt="license" src="https://img.shields.io/github/license/ttak0422/morimo?style=for-the-badge">
 </div>
 
 > [!WARNING]
