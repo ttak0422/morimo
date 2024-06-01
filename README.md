@@ -1,10 +1,9 @@
 <h1 align="center">morimo</h1>
 <div align="center">
   <p>Performance-focused neovim colorscheme designed for colorblind users.</p>
+  <img alt="tag" src="https://img.shields.io/github/v/tag/ttak0422/morimo?style=for-the-badge&label=latest%20tag&color=orange">
+  <img alt="license" src="https://img.shields.io/github/license/ttak0422/morimo?style=for-the-badge">
 </div>
-
-> [!WARNING]
-> This project is currently unstable and under active development.
 
 ![image](https://github.com/ttak0422/morimo/assets/15827817/8ec442bb-47d2-4fc9-b505-477394b3ee7b)
 
@@ -23,9 +22,9 @@
 ```lua
 -- config
 vim.g.morimo = {
-	-- Specify the integration plugins (/plugins/) to be loaded at startup.
-	-- Users can also load this using `load` command. (e.g. `lua require("morimo").load("treesitter")`)
-	plugins = {"treesitter"}
+  -- Specify the integration plugins (/plugins/) to be loaded at startup.
+  -- Users can also load this using `load` command. (e.g. `lua require("morimo").load("treesitter")`)
+  plugins = {"treesitter"}
 }
 vim.cmd("colorscheme morimo")
 ```
