@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Untagged]
 
+### Added
+
+- extras (wezterm)
+
 ## [0.1.0] 2024-05-31
 
 ### Added
