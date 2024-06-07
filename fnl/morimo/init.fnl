@@ -113,7 +113,7 @@
               ;; Word that should start with a capital.
               :SpellCap {:fg c.blue :undercurl true :sp c.blue}
               ;; SpellLocal	Word that is recognized by the spellchecker as one that is used in another region.
-              :SpellLocal {:fg c.aqua :undercurl true :sp c.aqua}
+              :SpellLocal {:fg c.cyan :undercurl true :sp c.cyan}
               ;; SpellRare	Word that is recognized by the spellchecker as one that is hardly ever used.
               :SpellRare {:fg c.purple :undercurl true :sp c.purple}
               ;; Status line of current window.
@@ -182,7 +182,7 @@
               ;; ** Any comment. **
               :Comment {:fg c.grey1 :italic true}
               ;; ** Any constant. **
-              :Constant {:fg c.aqua}
+              :Constant {:fg c.cyan}
               ;; A string constant: "this is a string".
               :String {:fg c.green}
               ;; A character constant: 'c', '\n'.
@@ -218,7 +218,7 @@
               ;; Preprocessor #define.
               ; Define
               ;; Same as Define.
-              :Macro {:fg c.aqua}
+              :Macro {:fg c.cyan}
               ;; preprocessor #if, #else, #endif, etc.
               ; PreCondit
               ;; ** int, long, char, etc. **
