@@ -1,4 +1,7 @@
-(let [c (require :morimo.colors)
+;; apply highlights
+(lua "local function apply(highlights)for hl,spec in pairs(highlights)do vim.api.nvim_set_hl(0,hl,spec) end;end")
+(lua "local function loadPlugin(ctx,name)apply(require(('morimo.plugins.'..name))(ctx)) end")
+(let [c (include :morimo.colors)
       builtin {:editor {;; ┌──────────────────────────┐
                         ;; │ Builtin highlight groups │
                         ;; └──────────────────────────┘
@@ -317,23 +320,15 @@
             c.lightCyan
             ;; bright white
             c.fg0]
-      default_config {:plugins []} ;;
-      ;;  context
-      ctx {:cfg vim.g.morimo :colors c} ;;
-      ;; apply highlights
-      apply (fn [highlights]
-              (each [hl spec (pairs highlights)]
-                (vim.api.nvim_set_hl 0 hl spec)))
-      loadPlugin (fn [ctx name]
-                   (apply ((require (.. :morimo.plugins. name)) ctx)))]
+      default_config {:plugins []}
+      ctx {:cfg vim.g.morimo :colors c}]
   ;; merge configurations (first time only)
   (set vim.g.morimo
        (vim.tbl_deep_extend :force default_config (or vim.g.morimo {})))
   {;; initialize colorscheme (usually called by :colorscheme command)
    :init (fn []
            ;; cleanup
-           (when vim.g.colors_name
-             (vim.cmd "hi clear"))
+           (lua "if vim.g.colors_name then vim.cmd('hi clear') end")
            (set vim.g.colors_name :morimo)
            (set vim.o.termguicolors true)
            ;; apply builtin highlights
