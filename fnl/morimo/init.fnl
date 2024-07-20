@@ -328,7 +328,7 @@
   {;; initialize colorscheme (usually called by :colorscheme command)
    :init (fn []
            ;; cleanup
-           (lua "if vim.g.colors_name then vim.cmd('hi clear') end")
+           (lua "if vim.g.colors_name then vim.cmd('hi clear')end")
            (set vim.g.colors_name :morimo)
            (set vim.o.termguicolors true)
            ;; apply builtin highlights

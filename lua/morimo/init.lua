@@ -11,7 +11,7 @@ local default_config = {plugins = {}}
 local ctx = {cfg = vim.g.morimo, colors = c}
 vim.g.morimo = vim.tbl_deep_extend("force", default_config, (vim.g.morimo or {}))
 local function _1_()
-  if vim.g.colors_name then vim.cmd('hi clear') end
+  if vim.g.colors_name then vim.cmd('hi clear')end
   vim.g.colors_name = "morimo"
   vim.o.termguicolors = true
   for _, hs in pairs(builtin) do
