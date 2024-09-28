@@ -1,0 +1,15 @@
+themes {
+    morimo {
+        fg "#b5d2a9"
+        bg "#767b82"
+        red "#d76e6e"
+        green "#679f68"
+        yellow "#d3c785"
+        blue "#789cbc"
+        magenta "#b384b1"
+        orange "#d99872"
+        cyan "#7aa7b3"
+        black "#2a2a2e"
+        white "#98b18e"
+    }
+}
