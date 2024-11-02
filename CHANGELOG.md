@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Untagged]
 
+### Added
+- plugins highlights (dap) 
+
 ## [0.1.3] 2024-11-01
 
 ### Added
