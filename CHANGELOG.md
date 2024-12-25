@@ -10,6 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - plugins highlights (dap) 
 
+### Changed
+- change plugin structure
+
 ## [0.1.3] 2024-11-01
 
 ### Added
