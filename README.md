@@ -24,7 +24,7 @@
 vim.g.morimo = {
   -- Specify the integration plugins (/plugins/) to be loaded at startup.
   -- Users can also load this using `load` command. (e.g. `lua require("morimo").load("treesitter")`)
-  plugins = {"treesitter"}
+  plugins = { "treesitter" = true }
 }
 vim.cmd("colorscheme morimo")
 ```
