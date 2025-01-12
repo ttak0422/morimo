@@ -7,11 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Untagged]
 
+## [1.0.0] 2025-01-12
+
 ### Added
 - plugins highlights (dap) 
 
 ### Changed
-- change plugin structure
+- change plugin structure and option (`plugins = { "treesitter" }` → `plugins = { "treesitter" = true }`)
+
+### Fixed
+- close [support change ColorScheme #11](https://github.com/ttak0422/morimo/issues/11)
 
 ## [0.1.3] 2024-11-01
 
