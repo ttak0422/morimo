@@ -369,7 +369,7 @@
                                    })]
                   (vim.api.nvim_set_hl 0 k v))
                 ;; apply plugins highlights
-                (lua "for k,_ in pairs(vim.g.morimo.plugins)do M.load(k)end")
+                (lua "for k,v in pairs(vim.g.morimo.plugins)do if v then M.load(k)end end")
                 ;; apply terminal highlights ;          (eval-compiler (  "print(1)" )) ;          (eval-compiler (+ 1 1 )) ;          (print (eval-compiler ; (list ;  "123" "\"test\"" ;  ) ;                   ) )
                 (each [i c (ipairs [;; black
                                     C.bg0
