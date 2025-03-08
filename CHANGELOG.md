@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Untagged]
 
+### Added
+- plugins highlights (git-conflict) 
+
+### Changed
 - change structure
 
 ## [1.0.1] 2025-03-08
