@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Untagged]
 
+## [1.0.1] 2025-03-08
+
+### Changed
+- Minimized code executed at startup
+
 ### Fixed
 - consider `vim.g.morimo.plugins` value
 
