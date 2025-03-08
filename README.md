@@ -14,19 +14,15 @@
 ## Features
 
 - **Colorblind-Friendly**: Accessible for users with color blindness.
-- **Performance-Oriented**: Minimal configuration for high performance and lazy loading support.
+- **Performance-Oriented**: Zero configuration for high performance and lazy loading support.
 - **Borderless Compatibility**: Optimized for `border=none` settings, ensuring a clean appearance.
 
 ## Usage
 
 ```lua
--- config
-vim.g.morimo = {
-  -- Specify the integration plugins (/plugins/) to be loaded at startup.
-  -- Users can also load this using `load` command. (e.g. `lua require("morimo").load("treesitter")`)
-  plugins = { treesitter = true }
-}
 vim.cmd("colorscheme morimo")
+-- Load the plugin's colorscheme definition
+require("morimo").load("treesitter")
 ```
 
 ## Integration 
