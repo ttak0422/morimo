@@ -1,2 +1,1 @@
-(fn [c]
-  {:LirFloatNormal {:link :NormalFloat}})
+{:LirFloatNormal {:link :NormalFloat}}

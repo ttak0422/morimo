@@ -1,6 +1,3 @@
-;; merge configurations (first time only)
-(lua "vim.g.morimo=vim.tbl_deep_extend('force',{plugins={}},vim.g.morimo or{})")
-
 ;; color palette
 (local C {;; util
           :fg0 "#b5d2a9"
@@ -369,5 +366,5 @@
           C.fg0])
 
 (local M {})
-(lua "package.preload['morimo.colors']=function()return C end;M.load=function(a)for b,c in pairs(require('morimo.plugins.'..a)(C))do vim.g.morimo.plugins[a]=true;vim.api.nvim_set_hl(0,b,c)end end;M.init=function()vim.cmd('hi clear')vim.g.colors_name='morimo'for b,c in pairs(H)do vim.api.nvim_set_hl(0,b,c)end;for b,c in pairs(vim.g.morimo.plugins)do if c then M.load(b)end end;for d,e in ipairs(T)do vim.g['terminal_color_'..d-1]=e end end")
+(lua "package.preload['morimo.colors']=function()return C end;M.loaded={}M.load=function(a)for b,c in pairs(require('morimo.plugins.'..a))do M.loaded[a]=true;vim.api.nvim_set_hl(0,b,c)end end;M.init=function()vim.cmd('hi clear')vim.g.colors_name='morimo'for b,c in pairs(H)do vim.api.nvim_set_hl(0,b,c)end;for b,c in ipairs(T)do vim.g['terminal_color_'..b-1]=c end;for b,d in pairs(M.loaded)do M.load(f)end end")
 M
