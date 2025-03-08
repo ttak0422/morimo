@@ -5,6 +5,9 @@
   <img alt="license" src="https://img.shields.io/github/license/ttak0422/morimo?style=for-the-badge">
 </div>
 
+> [!CAUTION]
+> Active development is planned for `v2`, which will include changes in color scheme and usage.
+
 ![image](https://github.com/ttak0422/morimo/assets/15827817/8ec442bb-47d2-4fc9-b505-477394b3ee7b)
 
 ## Requirements
