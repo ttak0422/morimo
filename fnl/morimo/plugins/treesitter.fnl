@@ -41,7 +41,7 @@
  ;; symbols or atoms
  "@string.special.symbol" {:fg c.blue}
  ;; URIs (e.g. hyperlinks)
- "@string.special.url" {:fg c.yellow :undercurl true}
+ "@string.special.url" {:fg c.yellow :underline true}
  ; ;; filenames
  ; "@string.special.path" {}
  ; ;; character literals
