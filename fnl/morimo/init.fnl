@@ -1,57 +1,58 @@
 ;; color palette
 (local C {;; util
-          :fg0 "#b5d2a9"
-          :fg1 "#98b18e"
-          :bg0 "#2a2a2e"
-          :bg1 "#313135"
-          :bg2 "#36363a"
-          :bg3 "#3f3f43"
-          :grey0 "#767b82"
-          :grey1 "#7f868c"
-          :grey2 "#9aa1a8"
-          :grey3 "#b0b7be"
+          :fg0 "#c5e2b9"
+          :fg1 "#a8c19e"
+          :bg0 "#2d2d31"
+          :bg1 "#333337"
+          :bg2 "#39393e"
+          :grey1 "#959ca2"
+          :grey2 "#aab1b8"
+          :grey3 "#c0c7ce"
           ;; palette
-          :lightRed "#ff6e6e"
-          :red "#d76e6e"
-          :darkRed "#a25454"
-          :lightGreen "#98c593"
-          :green "#679f68"
-          :darkGreen "#4a6e4a"
-          :seaGreen "#729e7b"
-          :blue "#789cbc"
-          :lightBlue "#9bb9d4"
-          :darkBlue "#4d6b83"
-          :slateBlue "#607597"
-          :cyan "#7aa7b3"
-          :lightCyan "#a0c8cc"
-          :darkCyan "#54757b"
-          :magenta "#b384b1"
-          :lightMagenta "#d0a3d0"
-          :darkMagenta "#8a5b8a"
-          :yellow "#d3c785"
-          :lightYellow "#e0d7a3"
-          :brown "#8b6e58"
-          :darkYellow "#b6a36b"
-          :orange "#d99872"
-          :purple "#a688a8"
-          :violet "#8b85aa"
+          :lightRed "#ff6e8c"
+          :red "#ff3a5e"
+          :darkRed "#c23a5a"
+          ; :lightGreen "#8ac588"
+          ; :green "#5aaa5c"
+          ; :darkGreen "#3d7e40"
+          ; :seaGreen "#6aa47a"
+          :lightGreen "#85c590"
+          :green "#55aa70"
+          :darkGreen "#3d8050"
+          :seaGreen "#65a480"
+          :blue "#88accc"
+          :lightBlue "#a0c0e0"
+          :darkBlue "#5b7a99"
+          :slateBlue "#7085a7"
+          :cyan "#8ab7c3"
+          :lightCyan "#b0d8dc"
+          :darkCyan "#64858b"
+          :magenta "#c394c1"
+          :lightMagenta "#e595e5"
+          :darkMagenta "#9a6b9a"
+          :yellow "#dbb96b"
+          :lightYellow "#eccb87"
+          :brown "#9b7e68"
+          :darkYellow "#bb8e56"
+          :orange "#e9a882"
+          :purple "#b698b8"
+          :violet "#9b95ba"
           ;; sub palette
-          :sub_red0 "#793a42"
-          :sub_red1 "#8c4a52"
-          :sub_red2 "#a15963"
-          :sub_red3 "#b56974"
-          :sub_green0 "#37574d"
-          :sub_green1 "#416960"
-          :sub_green2 "#4c7a72"
-          :sub_green3 "#578b85"
-          :sub_blue0 "#415c6d"
-          :sub_blue1 "#4c6a7f"
-          :sub_blue2 "#5b7a93"
-          :sub_blue3 "#6c8ba7"
-          :sub_yellow0 "#5d5c50"
-          :sub_yellow1 "#6c6a5c"
-          :sub_yellow2 "#7f7c6d"
-          :sub_yellow3 "#938e7f"})
+          :sub_red0 "#894a52"
+          :sub_red1 "#9c5a62"
+          :sub_red2 "#b16973"
+          :sub_red3 "#c57984"
+          :sub_green1 "#476a48"
+          :sub_green2 "#527853"
+          :sub_green3 "#5d865e"
+          :sub_blue0 "#4c677f"
+          :sub_blue1 "#4c7499"
+          :sub_blue2 "#4780b2"
+          :sub_blue3 "#3d88cc"
+          :sub_yellow0 "#6d6c60"
+          :sub_yellow1 "#7c7a6c"
+          :sub_yellow2 "#8f8c7d"
+          :sub_yellow3 "#a39e8f"})
 
 (local H {;; ┌──────────────────────────┐
           ;; │ Builtin highlight groups │
@@ -175,7 +176,7 @@
           ;; Status lines of not-current windows.
           :StatusLineNC {:fg C.grey0 :bg C.bg1}
           ;; Tab pages line, not active tab page label.
-          :TabLine {:fg C.grey2 :bg C.bg3}
+          :TabLine {:fg C.grey2 :bg C.bg2}
           ;; Tab pages line, where there are no labels.
           :TabLineFill {:fg C.grey1 :bg C.bg1}
           ;; Tab pages line, active tab page label.
@@ -183,13 +184,13 @@
           ;; Titles for output from :set all, :autocmd etc.
           :Title {:fg C.orange :bold true}
           ;; Visual mode selection.
-          :Visual {:bg C.bg3}
+          :Visual {:bg C.bg2}
           ;; Visual mode selection when vim is Not Owning the Selection.
-          :VisualNOS {:bg C.bg3}
+          :VisualNOS {:bg C.bg2}
           ;; Warning messages.
           :WarningMsg {:fg C.yellow :bold true}
           ;; Whitespace	nbsp, space, tab, multispace, lead and trail.
-          :Whitespace {:fg C.bg3}
+          :Whitespace {:fg C.bg2}
           ;; Current match in wildmenu completion.
           :WildMenu {:link :PmenuSel}
           ;; Window bar of current window.
