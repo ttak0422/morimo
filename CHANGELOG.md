@@ -15,6 +15,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - change `@string.special.url` highlight
 - change color palette
 
+### Fixed
+- fixed a bug in `load`
+
 ## [1.0.1] 2025-03-08
 
 ### Changed
